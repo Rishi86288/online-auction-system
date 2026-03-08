@@ -10,6 +10,7 @@ services:
 
   backend:
     build: 
+      # Updated path to point to your actual home directory
       context: /root/online-auction-system/server
     container_name: ipl-backend
     restart: always
@@ -25,6 +26,7 @@ services:
 
   frontend:
     build:
+      # Updated path to point to your actual home directory
       context: /root/online-auction-system/client
     container_name: ipl-frontend
     restart: always
