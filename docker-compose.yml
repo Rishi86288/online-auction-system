@@ -10,7 +10,7 @@ services:
 
   backend:
     build: 
-      context: /online-auction-system/server
+      context: /server
     container_name: ipl-backend
     restart: always
     environment:
@@ -25,7 +25,7 @@ services:
 
   frontend:
     build:
-      context: /online-auction-system/client
+      context: /client
     container_name: ipl-frontend
     restart: always
     ports:
